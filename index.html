@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Button Hover Glow</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card" style="--color: #00afaf">
+            <button class="button">
+                <span class="text">Hover</span>
+                <div class="icon">
+                    <svg>
+                        <use xlink:href="#arrow-right"></use>
+                    </svg>
+                </div>
+            </button>
+        </div>
+        <div class="card" style="--color: #00bb00">
+            <button class="button">
+                <span class="text">Hover</span>
+                <div class="icon">
+                    <svg>
+                        <use xlink:href="#arrow-right"></use>
+                    </svg>
+                </div>
+            </button>
+        </div>
+        <div class="card" style="--color: #0f2bff">
+            <button class="button">
+                <span class="text">Hover</span>
+                <div class="icon">
+                    <svg>
+                        <use xlink:href="#arrow-right"></use>
+                    </svg>
+                </div>
+            </button>
+        </div>
+        <div class="card" style="--color: #ff6a2f">
+            <button class="button">
+                <span class="text">Hover</span>
+                <div class="icon">
+                    <svg>
+                        <use xlink:href="#arrow-right"></use>
+                    </svg>
+                </div>
+            </button>
+        </div>
+    </div>
+    <svg style="display: none">
+        <symbol id="arrow-right" viewBox="0 0 20 10">
+            <path d="M14.84 0l-1.08 1.06 3.3 3.2H0v1.49h17.05l-3.3 3.2L14.84 10 20 5l-5.16-5z"></path>
+        </symbol>
+        <filter id="noiseFilter">
+            <feTurbulence type="fractalNoise" baseFrequency="1.8" numOctaves="6" stitchTiles="stitch"></feTurbulence>
+        </filter>
+    </svg>
+</body>
+</html>
